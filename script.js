@@ -34,3 +34,15 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
+
+
+
+const film1 = prompt('Один из последних просмотренных фильмов?', 'Logan'),
+      rating1 = prompt('На сколько оцените его?', '8.1'),
+      film2 = prompt('Один из последних просмотренных фильмов?', 'Logan'),
+      rating2 = prompt('На сколько оцените его?', '8.1');
+
+personalMovieDB.movies[film1] = rating1;
+personalMovieDB.movies[film2] = rating2;
+
+console.log(personalMovieDB);
